@@ -164,6 +164,13 @@ test('Myntra autosuggest dropdown select Formal Shirts', async ({ page }) => {
     for(let i = 0; i < optionsCount; ++i) {
         const optionText = await  options.locator("//ul[@class='desktop-group']//li").nth(i).textContent();
         console.log("Option " + i + ": " + optionText);
+        if(optionText === "Shirts Men Casual") {
+            
+                await options.locator("//ul[@class='desktop-group']//li").nth(i).click();
+                console.log("Clicked on option: " + optionText);
+                break;
+            
     
     }
+}
 });
