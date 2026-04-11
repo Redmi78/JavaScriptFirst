@@ -20,4 +20,8 @@ test("dashBoard page test", async ()=>{
  console.log(await lp.page.url())
 await expect(lp.page).toHaveURL("https://rahulshettyacademy.com/client/#/dashboard/dash")
  console.log(await dp.getProductList())
+
+ await dp.getProductList()
+ 
+
 })
