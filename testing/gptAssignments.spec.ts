@@ -1,5 +1,4 @@
 import { test, expect } from '@playwright/test'
-import { title } from 'node:process'
 
 test("gpt", async ({ page }) => {
     await page.goto("https://testautomationpractice.blogspot.com/p/playwrightpractice.html")

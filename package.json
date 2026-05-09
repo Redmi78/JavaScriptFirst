@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "smokeTest": "npx playwright test -g @smoke"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Redmi78/JavaScriptFirst.git"
@@ -18,6 +20,11 @@
   "homepage": "https://github.com/Redmi78/JavaScriptFirst#readme",
   "devDependencies": {
     "@playwright/test": "^1.58.2",
-    "@types/node": "^25.6.0"
+    "@types/node": "^25.6.0",
+    "allure-commandline": "^2.38.1",
+    "allure-playwright": "^3.7.1"
+  },
+  "dependencies": {
+    "xlsx": "^0.18.5"
   }
 }

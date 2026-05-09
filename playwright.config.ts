@@ -22,7 +22,7 @@ export default defineConfig({
   /* Opt out of parallel tests on CI. */
   workers: process.env.CI ? 1 : 2,
   /* Reporter to use. See https:2//playwright.dev/docs/test-reporters */
-  reporter: 'html',
+  reporter:  [['line'], ['allure-playwright', { resultsDir: 'allure-results' }]],
   expect: {
     /* Maximum time expect() should wait for the condition to be met. */
     timeout: 5000

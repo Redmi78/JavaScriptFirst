@@ -13,7 +13,7 @@ test.beforeEach(async ({page})=>{
 })
 
 
-test("Valid login test", async ()=>{
+test("Valid login test",{tag:'@smoke'}, async ()=>{
     await lp.loginIntoApplication(username, Password)
    // await expect(lp.homePageIdentifier).toBeVisible()
 })
